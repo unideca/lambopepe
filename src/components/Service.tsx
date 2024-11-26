@@ -1,6 +1,6 @@
-import { Box, Button, Flex, Grid, GridItem, Image, Img, Text } from "@chakra-ui/react";
+import { Box, Button, Flex, Img, Text } from "@chakra-ui/react";
 import { FC, useEffect } from "react";
-import { motion, useAnimation, Variants } from "framer-motion"; 
+import { useAnimation, Variants } from "framer-motion"; 
 
 interface ServicesProps {
     setIsRender : React.Dispatch<React.SetStateAction<boolean>>;
@@ -9,21 +9,7 @@ interface ServicesProps {
     language : string;
 }
 
-const epepeImg = [
-    {
-    "image" : "images/E1.png",
-    },{
-    "image" : "images/P1.png",
-    },{
-    "image" : "images/E2.png",
-    },{
-    "image" : "images/P2.png",
-    },{
-    "image" : "images/E3.png",
-    },
-]
-
-const Services : FC<ServicesProps> = ({isRender, setIsRender, tokenExInVariants}) => {
+const Services : FC<ServicesProps> = ({isRender, setIsRender}) => {
     const serviceTopAnimation = useAnimation();
     const serviceBottomAnimation = useAnimation();
     
