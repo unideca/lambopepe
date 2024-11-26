@@ -100,7 +100,7 @@ const Services : FC<ServicesProps> = ({isRender, setIsRender}) => {
                     Choose your wallet
                   </Text>
                   <Text color="white" mb={2} >
-                    A wallet is necessary for people wanting to use, trade, or hold EarthPepe. You can pick a wallet.
+                    A wallet is necessary for people wanting to use, trade, or hold LamboPepe. You can pick a wallet.
                   </Text>
                 </Box>
                 <Box textAlign="center" bg="gray.700" borderRadius="md" p={2} border="2px solid transparent" _hover={{borderColor: "white", cursor: "pointer"}} >
@@ -145,10 +145,10 @@ const Services : FC<ServicesProps> = ({isRender, setIsRender}) => {
                     03
                   </Text>
                   <Text fontSize="20px" fontWeight="bold" mb={1}>
-                    Get some EPEPE
+                    Get some LAMBOP
                   </Text>
                   <Text color="white" mb={2}>
-                    There’s lots of ways to get your hands on some EPEPE
+                    There’s lots of ways to get your hands on some LAMBOP
                   </Text>
                 </Box>
               </Flex>
