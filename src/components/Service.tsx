@@ -76,10 +76,10 @@ const Services : FC<ServicesProps> = ({isRender, setIsRender}) => {
             <Flex h="680px" gap={2} alignItems="center" justifyContent="center" flexDir="column">
               <Flex
                 flexDir="column"
-                gap={8}
+                gap={[4,4,4,8,8,8,8]}
                 mx="auto"
               >
-                <Text fontSize="24px" fontWeight="bold" color="white">
+                <Text fontSize={["20px","20px","20px","24px","24px","24px","24px"]} fontWeight="bold" color="white">
                   Getting Started
                 </Text>
                 <Box textAlign="center" bg="gray.700" borderRadius="md" p={2} border="2px solid transparent" _hover={{borderColor: "white", cursor: "pointer"}} >
@@ -90,16 +90,16 @@ const Services : FC<ServicesProps> = ({isRender, setIsRender}) => {
                     fontWeight="bold"
                     borderRadius="full"
                     display="inline-block"
-                    px={4}
-                    py={2}
-                    mb={2}
+                    px={[2,2,2,4,4,4,4]}
+                    py={[1,1,1,2,2,2,2]}
+                    mb={[1,1,1,2,2,2,2]}
                   >
                     01
                   </Text>
-                  <Text fontSize="20px" fontWeight="bold" mb={1}>
+                  <Text fontSize={["16px","16px","16px","20px","20px","20px","20px"]} fontWeight="bold" mb={1}>
                     Choose your wallet
                   </Text>
-                  <Text color="white" mb={2} >
+                  <Text fontSize={["14px","14px","14px","16px","16px","16px","16px"]} color="white" mb={2} >
                     A wallet is necessary for people wanting to use, trade, or hold LamboPepe. You can pick a wallet.
                   </Text>
                 </Box>
@@ -111,16 +111,16 @@ const Services : FC<ServicesProps> = ({isRender, setIsRender}) => {
                     fontWeight="bold"
                     borderRadius="full"
                     display="inline-block"
-                    px={4}
-                    py={2}
-                    mb={2}
+                    px={[2,2,2,4,4,4,4]}
+                    py={[1,1,1,2,2,2,2]}
+                    mb={[1,1,1,2,2,2,2]}
                   >
                     02
                   </Text>
-                  <Text fontSize="20px" fontWeight="bold" mb={1}>
+                  <Text fontSize={["16px","16px","16px","20px","20px","20px","20px"]} fontWeight="bold" mb={1}>
                     Configure your wallet
                   </Text>
-                  <Text color="white" mb={2}>
+                  <Text fontSize={["14px","14px","14px","16px","16px","16px","16px"]} color="white" mb={2}>
                     After downloading, configure your wallet according to our guide.
                   </Text>
                   <Button 
@@ -128,6 +128,8 @@ const Services : FC<ServicesProps> = ({isRender, setIsRender}) => {
                   as="a" //down
                   href="/documents/guide.pdf" //down
                   download="guide.pdf" // 다운로드 속성 추가
+                  w={16}
+                  h={8}
                   >Guide</Button>
                 </Box>
                 <Box textAlign="center" bg="gray.700" borderRadius="md" p={2} border="2px solid transparent" _hover={{borderColor: "white", cursor: "pointer"}}>
@@ -138,16 +140,16 @@ const Services : FC<ServicesProps> = ({isRender, setIsRender}) => {
                     fontWeight="bold"
                     borderRadius="full"
                     display="inline-block"
-                    px={4}
-                    py={2}
-                    mb={2}
+                    px={[2,2,2,4,4,4,4]}
+                    py={[1,1,1,2,2,2,2]}
+                    mb={[1,1,1,2,2,2,2]}
                   >
                     03
                   </Text>
-                  <Text fontSize="20px" fontWeight="bold" mb={1}>
+                  <Text fontSize={["16px","16px","16px","20px","20px","20px","20px"]} fontWeight="bold" mb={1}>
                     Get some LAMBOP
                   </Text>
-                  <Text color="white" mb={2}>
+                  <Text fontSize={["14px","14px","14px","16px","16px","16px","16px"]} color="white" mb={2}>
                     There’s lots of ways to get your hands on some LAMBOP
                   </Text>
                 </Box>
